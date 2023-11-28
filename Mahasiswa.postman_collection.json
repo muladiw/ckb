@@ -1,0 +1,748 @@
+{
+	"info": {
+		"_postman_id": "071be58f-e6b4-4df0-887b-1f67935068f5",
+		"name": "Mahasiswa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24363555"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "CREATE User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "noTelepon",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "jenisKelamin",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Detail User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/users/detail/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"users",
+								"detail",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "noTelepon",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "jenisKelamin",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mahasiswa",
+			"item": [
+				{
+					"name": "GET Mahasiswa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE Mahasiswa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "jurusan",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Detail Mahasiswa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/mahasiswa/detail/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mahasiswa",
+								"detail",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT Mahasiswa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "jurusan",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/mahasiswa/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mahasiswa",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Mahasiswa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/mahasiswa/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mahasiswa",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nilai Mahasiswa",
+			"item": [
+				{
+					"name": "GET Nilai Mahasiswa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/nilai-mahasiswa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"nilai-mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE Nilai Mahasiswa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "kodeMataKuliah",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "uts",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tugas",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "uas",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/nilai-mahasiswa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"nilai-mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Detail Nilai Mahasiswa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/nilai-mahasiswa/detail/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"nilai-mahasiswa",
+								"detail",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT Nilai Mahasiswa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "kodeMataKuliah",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "uts",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tugas",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "uas",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/nilai-mahasiswa/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"nilai-mahasiswa",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Nilai Mahasiswa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/nilai-mahasiswa/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"nilai-mahasiswa",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mata Kuliah",
+			"item": [
+				{
+					"name": "GET Mata Kuliah",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/mata-kuliah",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mata-kuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE Mata Kuliah",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "kode",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/mata-kuliah",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mata-kuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Detail Mata Kuliah",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/mata-kuliah/detail/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mata-kuliah",
+								"detail",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT Mata Kuliah",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "kode",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3333/mata-kuliah/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mata-kuliah",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Mata Kuliah",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3333/mata-kuliah/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3333",
+							"path": [
+								"mata-kuliah",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
